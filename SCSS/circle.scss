@@ -1,0 +1,43 @@
+:root {
+  --page-color:   #1F1F1F;
+  --circle-color: #CC0066;
+  --loader-size:  200px;
+  --circle-size:  60px;
+}
+
+body {
+  display:          flex;
+  align-items:      center;
+  justify-content:  center;
+  min-height:       100vh;
+  background-color: var(--page-color);
+}
+
+.loader {
+  width:             var(--loader-size);
+  height:            var(--loader-size);
+  -webkit-animation: rotate 3s linear infinite;
+          animation: rotate 3s linear infinite;
+}
+
+.circle {
+  content:          '';
+  position:         absolute;
+  top:              0;
+  left:             0;
+  width:            var(--circle-size);
+  height:           var(--circle-size);
+  background-color: var(--circle-color);
+  border-radius:    100%;
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
