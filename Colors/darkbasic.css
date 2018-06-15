@@ -1,8 +1,6 @@
-/* general */
 html * {
-  color: #f0f0f0 !important;
+  color: #F0F0F0 !important;
   background-color: #000000 !important;
 }
 
-/* hover*/
-a:hover {color: #ff0000;}
+a:hover {color: #FF0000;}
